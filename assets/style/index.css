@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif !important;
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.carouselImg{
+    width: 416px;
+    height: 537px;
+}
+
+
+
+
+h1 {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 40;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    text-align: center;
+
+}
+
+h2 {
+    margin-block-start: 0;
+
+}
+
+h4 {
+    font-weight: 400;
+    font-family: 'Raleway';
+    font-size: 15px !important;
+}
+
+h5 {
+    margin-block-start: 0;
+}
+
+
+/* header */
+
+.logo img{
+    height: 100px;
+}
+
+header {
+    width: 1440px;
+    height: 100px;
+    background-color: #c9ada7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.46) 1px 3px 10px 0px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 692px;
+}
+
+
+.navbar a,
+.nav-button-and-fav .buttona {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+
+.nav-button-and-fav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button-and-fav .buttona {
+    width: 100px;
+    height: 50px;
+    border: 1px rgba(255, 255, 255, 0.562) solid;
+    background-color: rgba(154, 140, 152, 0.5);
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/* banner */
+
+.banner {
+    width: 1440px;
+    height: 572px;
+    background-image: url(/assets/img/banner.png);
+    background-size: cover;
+    margin-bottom: 30px;
+
+}
+
+
+
+/* main */
+
+/*  Sales */
+
+.sales-section {
+    display: grid;
+    justify-items: center;
+    width: 1440px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-row-gap: 30px;
+    margin-bottom: 100px;
+    /* background-color: red; */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+    z-index: 0 !important;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    opacity: 0.7 !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 0px !important;
+}
+
+/* carousel div / home informations */
+
+.carousel-div {
+    width: 416px;
+    height: 90x;
+    /* background-color: rgba(242, 233, 228, 0.8); */
+    background-color: rgba(255, 255, 255, 0.742);
+    position: absolute;
+    bottom: 4%;
+    left: calc((100% - 416px)*0.5);
+    /* border-radius: 8px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 3px;
+}
+
+.carousel-div-price,
+.carousel-div-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 28px;
+}
+
+.price-per-sqft {
+    display: flex;
+    align-items: center;
+    color: rgba(34, 34, 59, 0.8);
+}
+
+.carousel-div-features img {
+    width: 45px;
+    height: 45px;
+}
+
+.carousel-div-features span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 416px;
+    height: 537px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #00000080;
+}
+
+
+
+/* inside box elements */
+
+.home-sale-box {
+    width: min-content;
+    padding: 5px;
+    height: 35px;
+    /* background-color: rgba(34, 34, 59, 0.533); */
+    background-color: #d82c26;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 13px;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* main .fav-heart{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 5;
+} */
+
+
+
+.heart-svg{
+    cursor: pointer;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkbox:checked+label svg .heart{
+    fill: #d82c26;
+}
+
+.favorite{
+    fill: #f00000;
+}
+
+.contact-icon {
+    position: absolute;
+    z-index: 2;
+    top: 12%;
+    right: 4%;
+}
+
+.contact-icon img{
+    width: 40px;
+}
+
+
+
+/* footer */
+footer {
+    width: 1440px;
+    height: 298px;
+    background-color: #c9ada7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col .link-list a,
+.col .social-media-list a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    height: 278px;
+}
+
+.col h2 {
+    width: 171px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col img {
+    margin-right: 10px;
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 160px;
+}
+
+.social-media-list {
+    height: 160px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.button {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: calc((100% - 700px)*0.5);
+    left: calc((100% - 900px)*0.5);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 900px;
+    height: 700px;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #d29259;
+}
+
+.popup h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/*  form */
+
+.cssform1 label,
+.cssform1 input {
+    display: block;
+    width: 600px;
+}
+
+.cssform div {
+    margin-bottom: 20px;
+}
+
+.cssform input {
+    border: rgb(218, 218, 218) 1px solid;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.cssform {
+    width: 600px;
+}
+
+.content .button {
+    width: 78px;
+    height: 38px;
+    padding: 6px 12px;
+    background-color: #0d6efd;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content .button:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+
+/* hover */
+
+.navbar h4:hover {
+    color: #b78579;
+}
+
+.nav-button-and-fav .buttona:hover {
+    background-color: #c9ada7;
+}
+
+.nav-button-and-fav .buttona:hover {
+    color: white;
+}
+
+.fav:hover {
+    background-image: url(/assets/img/icons/heart-fill.png);
+    background-size: cover;
+}
+
+.contact-icon .button:hover {
+    background-image: url(/assets/img/icons/msgclr\ \(2\).png);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.fav-heart:hover {
+    background-image: url(/assets/img/icons/heart-fill.png);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.col h5:hover {
+    color: #b78579;
+}
+
+input{
+    margin-bottom: 10px;
+    display: block;
+}
